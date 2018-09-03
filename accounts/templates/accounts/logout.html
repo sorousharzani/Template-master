@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body  %}
+<div class="container">
+    <h1>Hope to see you soon</h1>
+    <p>
+        you have logged out
+    </p>
+    <h2>logout</h2>
+    <form  method="post">
+        {% csrf_token %}
+    </form>
+</div>
+{% endblock %}
